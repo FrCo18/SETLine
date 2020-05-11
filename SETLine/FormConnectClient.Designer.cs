@@ -144,7 +144,7 @@
             // Worker
             // 
             this.Worker.Text = "Сотрудник";
-            this.Worker.Width = 79;
+            this.Worker.Width = 133;
             // 
             // Client
             // 
@@ -164,6 +164,7 @@
             // Phone
             // 
             this.Phone.Text = "Телефон";
+            this.Phone.Width = 114;
             // 
             // buttonEdit
             // 
@@ -217,6 +218,7 @@
             this.Controls.Add(this.labelWorker);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "FormConnectClient";
