@@ -119,7 +119,7 @@ namespace SETLine
                 
                 foreach (Inventory inventory in Program.stlBD.Inventory)
                 {
-                    if (inventory.Category == "Переферия")
+                    if (inventory.Category == "Периферия")
                     {
                         string[] item = { inventory.Id+": "+ inventory.NameTovar, "Цена: " + inventory.Price };
                         comboBoxTovar.Items.Add(string.Join(" ", item));

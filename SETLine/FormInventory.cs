@@ -84,7 +84,7 @@ namespace SETLine
                 listViewPeriphery.Items.Clear();
                 foreach (Inventory inventory in Program.stlBD.Inventory)
                 {
-                    if (inventory.Category == "Переферия")
+                    if (inventory.Category == "Периферия")
                     {
                         ListViewItem item = new ListViewItem(new string[] {
                     inventory.NameTovar, inventory.Category,inventory.Quantity.ToString(), inventory.Price.ToString()

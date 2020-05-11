@@ -187,7 +187,7 @@
             this.comboBoxCategory.Items.AddRange(new object[] {
             "Телефоны",
             "Смартфоны",
-            "Переферия"});
+            "Периферия"});
             this.comboBoxCategory.Location = new System.Drawing.Point(15, 220);
             this.comboBoxCategory.Margin = new System.Windows.Forms.Padding(6);
             this.comboBoxCategory.Name = "comboBoxCategory";

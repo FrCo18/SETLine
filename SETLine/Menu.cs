@@ -15,15 +15,6 @@ namespace SETLine
         public Menu()
         {
             InitializeComponent();
-            //Menu menu = new Menu();
-            //if (User.user.type != "HeadAdmin" && User.user.type != "Администратор")
-            //{
-            //    menu.Size = new Size(442, 509);
-            //}
-            //else
-            //{
-            //    menu.Size = new Size(792, 509);
-            //}
         }
 
         private void buttonWorkers_Click(object sender, EventArgs e)
@@ -75,18 +66,6 @@ namespace SETLine
         }
         private void Menu_Load(object sender, EventArgs e)
         {
-            //if (User.user.type != "Продавец услуг сотовой связи")
-            //{
-            //    buttonConnectClient.Enabled = false;
-            //    buttonRates.Enabled = false;
-            //    menu.Size = new Size(792, 509);
-            //}
-            //else
-            //{
-            //    menu.Size = new Size(442, 355);
-            //    buttonConnectClient.Enabled = true;
-            //    buttonRates.Enabled = true;
-            //}
             if (User.user.type != "Продавец услуг сотовой связи")
             {
                 buttonConnectClient.Location = new Point(407, buttonConnectClient.Location.Y);
