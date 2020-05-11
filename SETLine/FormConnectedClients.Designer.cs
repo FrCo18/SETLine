@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConnectedClients));
             this.comboBoxWorker = new System.Windows.Forms.ComboBox();
             this.labelWorker = new System.Windows.Forms.Label();
             this.listViewConnects = new System.Windows.Forms.ListView();
@@ -44,7 +45,7 @@
             // 
             this.comboBoxWorker.FormattingEnabled = true;
             this.comboBoxWorker.Location = new System.Drawing.Point(22, 194);
-            this.comboBoxWorker.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBoxWorker.Margin = new System.Windows.Forms.Padding(6);
             this.comboBoxWorker.Name = "comboBoxWorker";
             this.comboBoxWorker.Size = new System.Drawing.Size(275, 32);
             this.comboBoxWorker.TabIndex = 0;
@@ -71,7 +72,7 @@
             this.listViewConnects.GridLines = true;
             this.listViewConnects.HideSelection = false;
             this.listViewConnects.Location = new System.Drawing.Point(343, 137);
-            this.listViewConnects.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.listViewConnects.Margin = new System.Windows.Forms.Padding(6);
             this.listViewConnects.Name = "listViewConnects";
             this.listViewConnects.Size = new System.Drawing.Size(725, 347);
             this.listViewConnects.TabIndex = 62;
@@ -116,13 +117,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(1)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(1093, 508);
             this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.listViewConnects);
             this.Controls.Add(this.labelWorker);
             this.Controls.Add(this.comboBoxWorker);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormConnectedClients";
             this.Text = "Сотрудниики подключившие клиентов";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();

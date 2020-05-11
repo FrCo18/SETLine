@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddOrDelOrder));
             this.labelType = new System.Windows.Forms.Label();
             this.listViewOrders = new System.Windows.Forms.ListView();
             this.Worker = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -69,7 +70,7 @@
             this.listViewOrders.GridLines = true;
             this.listViewOrders.HideSelection = false;
             this.listViewOrders.Location = new System.Drawing.Point(466, 107);
-            this.listViewOrders.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.listViewOrders.Margin = new System.Windows.Forms.Padding(6);
             this.listViewOrders.Name = "listViewOrders";
             this.listViewOrders.Size = new System.Drawing.Size(560, 319);
             this.listViewOrders.TabIndex = 45;
@@ -103,8 +104,9 @@
             // 
             // buttonDel
             // 
+            this.buttonDel.ForeColor = System.Drawing.Color.Black;
             this.buttonDel.Location = new System.Drawing.Point(837, 438);
-            this.buttonDel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonDel.Margin = new System.Windows.Forms.Padding(6);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(189, 61);
             this.buttonDel.TabIndex = 44;
@@ -114,8 +116,9 @@
             // 
             // buttonAdd
             // 
+            this.buttonAdd.ForeColor = System.Drawing.Color.Black;
             this.buttonAdd.Location = new System.Drawing.Point(599, 438);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(6);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(189, 61);
             this.buttonAdd.TabIndex = 42;
@@ -157,7 +160,7 @@
             // 
             this.comboBoxClient.FormattingEnabled = true;
             this.comboBoxClient.Location = new System.Drawing.Point(15, 150);
-            this.comboBoxClient.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBoxClient.Margin = new System.Windows.Forms.Padding(6);
             this.comboBoxClient.Name = "comboBoxClient";
             this.comboBoxClient.Size = new System.Drawing.Size(398, 32);
             this.comboBoxClient.TabIndex = 48;
@@ -167,7 +170,7 @@
             // 
             this.comboBoxTovar.FormattingEnabled = true;
             this.comboBoxTovar.Location = new System.Drawing.Point(15, 363);
-            this.comboBoxTovar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBoxTovar.Margin = new System.Windows.Forms.Padding(6);
             this.comboBoxTovar.Name = "comboBoxTovar";
             this.comboBoxTovar.Size = new System.Drawing.Size(398, 32);
             this.comboBoxTovar.TabIndex = 50;
@@ -181,7 +184,7 @@
             "Смартфон",
             "Переферия"});
             this.comboBoxType.Location = new System.Drawing.Point(15, 254);
-            this.comboBoxType.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBoxType.Margin = new System.Windows.Forms.Padding(6);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(398, 32);
             this.comboBoxType.TabIndex = 50;
@@ -212,6 +215,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(1)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(1045, 513);
             this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.labelWorkerShow);
@@ -226,7 +230,9 @@
             this.Controls.Add(this.labelClient);
             this.Controls.Add(this.labelWorker);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormAddOrDelOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Создание или удаление заказа";

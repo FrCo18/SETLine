@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInventory));
             this.labelPrice = new System.Windows.Forms.Label();
             this.textBoxPrice = new System.Windows.Forms.TextBox();
             this.listViewPhones = new System.Windows.Forms.ListView();
@@ -71,7 +72,7 @@
             // textBoxPrice
             // 
             this.textBoxPrice.Location = new System.Drawing.Point(15, 364);
-            this.textBoxPrice.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxPrice.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(380, 29);
             this.textBoxPrice.TabIndex = 46;
@@ -87,7 +88,7 @@
             this.listViewPhones.GridLines = true;
             this.listViewPhones.HideSelection = false;
             this.listViewPhones.Location = new System.Drawing.Point(453, 104);
-            this.listViewPhones.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.listViewPhones.Margin = new System.Windows.Forms.Padding(6);
             this.listViewPhones.Name = "listViewPhones";
             this.listViewPhones.Size = new System.Drawing.Size(825, 442);
             this.listViewPhones.TabIndex = 45;
@@ -118,8 +119,9 @@
             // 
             // buttonDel
             // 
+            this.buttonDel.ForeColor = System.Drawing.Color.Black;
             this.buttonDel.Location = new System.Drawing.Point(1128, 573);
-            this.buttonDel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonDel.Margin = new System.Windows.Forms.Padding(6);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(149, 58);
             this.buttonDel.TabIndex = 44;
@@ -129,8 +131,9 @@
             // 
             // buttonEdit
             // 
+            this.buttonEdit.ForeColor = System.Drawing.Color.Black;
             this.buttonEdit.Location = new System.Drawing.Point(967, 573);
-            this.buttonEdit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(6);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(149, 58);
             this.buttonEdit.TabIndex = 43;
@@ -140,8 +143,9 @@
             // 
             // buttonAdd
             // 
+            this.buttonAdd.ForeColor = System.Drawing.Color.Black;
             this.buttonAdd.Location = new System.Drawing.Point(806, 573);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(6);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(149, 58);
             this.buttonAdd.TabIndex = 42;
@@ -152,7 +156,7 @@
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(15, 126);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(380, 29);
             this.textBoxName.TabIndex = 39;
@@ -185,7 +189,7 @@
             "Смартфоны",
             "Переферия"});
             this.comboBoxCategory.Location = new System.Drawing.Point(15, 220);
-            this.comboBoxCategory.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBoxCategory.Margin = new System.Windows.Forms.Padding(6);
             this.comboBoxCategory.Name = "comboBoxCategory";
             this.comboBoxCategory.Size = new System.Drawing.Size(380, 32);
             this.comboBoxCategory.TabIndex = 48;
@@ -202,7 +206,7 @@
             this.listViewSmartPhones.GridLines = true;
             this.listViewSmartPhones.HideSelection = false;
             this.listViewSmartPhones.Location = new System.Drawing.Point(453, 104);
-            this.listViewSmartPhones.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.listViewSmartPhones.Margin = new System.Windows.Forms.Padding(6);
             this.listViewSmartPhones.Name = "listViewSmartPhones";
             this.listViewSmartPhones.Size = new System.Drawing.Size(825, 442);
             this.listViewSmartPhones.TabIndex = 49;
@@ -241,7 +245,7 @@
             this.listViewPeriphery.GridLines = true;
             this.listViewPeriphery.HideSelection = false;
             this.listViewPeriphery.Location = new System.Drawing.Point(453, 104);
-            this.listViewPeriphery.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.listViewPeriphery.Margin = new System.Windows.Forms.Padding(6);
             this.listViewPeriphery.Name = "listViewPeriphery";
             this.listViewPeriphery.Size = new System.Drawing.Size(825, 442);
             this.listViewPeriphery.TabIndex = 50;
@@ -271,7 +275,7 @@
             // textBoxQuantity
             // 
             this.textBoxQuantity.Location = new System.Drawing.Point(15, 292);
-            this.textBoxQuantity.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxQuantity.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxQuantity.Name = "textBoxQuantity";
             this.textBoxQuantity.Size = new System.Drawing.Size(380, 29);
             this.textBoxQuantity.TabIndex = 51;
@@ -290,7 +294,7 @@
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Image = global::SETLine.Properties.Resources.SETLineLogo;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(844, 12);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(826, 12);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(451, 77);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -301,6 +305,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(1)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(1324, 640);
             this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.labelQuantity);
@@ -318,7 +323,9 @@
             this.Controls.Add(this.labelCategory);
             this.Controls.Add(this.labelName);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormInventory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Склад";

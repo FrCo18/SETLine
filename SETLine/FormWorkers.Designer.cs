@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormWorkers));
             this.labelLastName = new System.Windows.Forms.Label();
             this.labelFirstName = new System.Windows.Forms.Label();
             this.labelMiddleName = new System.Windows.Forms.Label();
@@ -51,14 +52,14 @@
             this.Salary = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.PercentOfSalary = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Phone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Loign = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Password = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.labelPhone = new System.Windows.Forms.Label();
             this.labelLogin = new System.Windows.Forms.Label();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.Loign = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Password = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPercent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -132,7 +133,7 @@
             "Продавец услуг сотовой связи",
             "Консультант-продавец товаров"});
             this.comboBoxType.Location = new System.Drawing.Point(26, 97);
-            this.comboBoxType.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBoxType.Margin = new System.Windows.Forms.Padding(6);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(297, 32);
             this.comboBoxType.TabIndex = 6;
@@ -141,7 +142,7 @@
             // textBoxLastName
             // 
             this.textBoxLastName.Location = new System.Drawing.Point(26, 171);
-            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(180, 29);
             this.textBoxLastName.TabIndex = 7;
@@ -149,7 +150,7 @@
             // textBoxFirstName
             // 
             this.textBoxFirstName.Location = new System.Drawing.Point(26, 265);
-            this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(180, 29);
             this.textBoxFirstName.TabIndex = 8;
@@ -157,7 +158,7 @@
             // textBoxMiddleName
             // 
             this.textBoxMiddleName.Location = new System.Drawing.Point(26, 365);
-            this.textBoxMiddleName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxMiddleName.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxMiddleName.Name = "textBoxMiddleName";
             this.textBoxMiddleName.Size = new System.Drawing.Size(180, 29);
             this.textBoxMiddleName.TabIndex = 9;
@@ -165,7 +166,7 @@
             // textBoxSalary
             // 
             this.textBoxSalary.Location = new System.Drawing.Point(26, 438);
-            this.textBoxSalary.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxSalary.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxSalary.Name = "textBoxSalary";
             this.textBoxSalary.Size = new System.Drawing.Size(180, 29);
             this.textBoxSalary.TabIndex = 10;
@@ -174,7 +175,7 @@
             // numericUpDownPercent
             // 
             this.numericUpDownPercent.Location = new System.Drawing.Point(268, 366);
-            this.numericUpDownPercent.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.numericUpDownPercent.Margin = new System.Windows.Forms.Padding(6);
             this.numericUpDownPercent.Name = "numericUpDownPercent";
             this.numericUpDownPercent.Size = new System.Drawing.Size(220, 29);
             this.numericUpDownPercent.TabIndex = 11;
@@ -182,8 +183,9 @@
             // 
             // buttonAdd
             // 
+            this.buttonAdd.ForeColor = System.Drawing.Color.Black;
             this.buttonAdd.Location = new System.Drawing.Point(1424, 572);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(6);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(130, 45);
             this.buttonAdd.TabIndex = 12;
@@ -193,8 +195,9 @@
             // 
             // buttonEdit
             // 
+            this.buttonEdit.ForeColor = System.Drawing.Color.Black;
             this.buttonEdit.Location = new System.Drawing.Point(1566, 572);
-            this.buttonEdit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(6);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(130, 45);
             this.buttonEdit.TabIndex = 13;
@@ -204,8 +207,9 @@
             // 
             // buttonDel
             // 
+            this.buttonDel.ForeColor = System.Drawing.Color.Black;
             this.buttonDel.Location = new System.Drawing.Point(1708, 572);
-            this.buttonDel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonDel.Margin = new System.Windows.Forms.Padding(6);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(130, 45);
             this.buttonDel.TabIndex = 14;
@@ -228,7 +232,7 @@
             this.listViewWorkers.GridLines = true;
             this.listViewWorkers.HideSelection = false;
             this.listViewWorkers.Location = new System.Drawing.Point(517, 118);
-            this.listViewWorkers.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.listViewWorkers.Margin = new System.Windows.Forms.Padding(6);
             this.listViewWorkers.Name = "listViewWorkers";
             this.listViewWorkers.Size = new System.Drawing.Size(1320, 442);
             this.listViewWorkers.TabIndex = 15;
@@ -271,10 +275,18 @@
             this.Phone.Text = "Телефон";
             this.Phone.Width = 91;
             // 
+            // Loign
+            // 
+            this.Loign.Text = "Логин";
+            // 
+            // Password
+            // 
+            this.Password.Text = "Пароль";
+            // 
             // textBoxPhone
             // 
             this.textBoxPhone.Location = new System.Drawing.Point(270, 438);
-            this.textBoxPhone.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxPhone.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(180, 29);
             this.textBoxPhone.TabIndex = 16;
@@ -303,7 +315,7 @@
             // textBoxLogin
             // 
             this.textBoxLogin.Location = new System.Drawing.Point(270, 172);
-            this.textBoxLogin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxLogin.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(180, 29);
             this.textBoxLogin.TabIndex = 18;
@@ -321,18 +333,10 @@
             // textBoxPassword
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(270, 265);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(180, 29);
             this.textBoxPassword.TabIndex = 20;
-            // 
-            // Loign
-            // 
-            this.Loign.Text = "Логин";
-            // 
-            // Password
-            // 
-            this.Password.Text = "Пароль";
             // 
             // pictureBoxLogo
             // 
@@ -348,6 +352,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(1)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(1841, 626);
             this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.labelPassword);
@@ -373,7 +378,9 @@
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.labelLastName);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormWorkers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Сотрудники";

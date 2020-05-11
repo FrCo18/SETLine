@@ -15,6 +15,15 @@ namespace SETLine
         public Menu()
         {
             InitializeComponent();
+            //Menu menu = new Menu();
+            //if (User.user.type != "HeadAdmin" && User.user.type != "Администратор")
+            //{
+            //    menu.Size = new Size(442, 509);
+            //}
+            //else
+            //{
+            //    menu.Size = new Size(792, 509);
+            //}
         }
 
         private void buttonWorkers_Click(object sender, EventArgs e)
@@ -53,44 +62,6 @@ namespace SETLine
             formConnect.Show();
         }
 
-        private void Menu_Load(object sender, EventArgs e)
-        {
-            if (User.user.type != "HeadAdmin" && User.user.type != "Администратор")
-            {
-                buttonInventory.Enabled = false;
-                buttonWorkers.Enabled = false;
-                buttonConnectedClients.Enabled = false;
-                buttonSales.Enabled = false;
-            }
-            else
-            {
-                buttonInventory.Enabled = true;
-                buttonWorkers.Enabled = true;
-                buttonConnectedClients.Enabled = true;
-                buttonSales.Enabled = true;
-            }
-            if (User.user.type != "HeadAdmin" && User.user.type != "Администратор" && User.user.type != "Продавец услуг сотовой связи")
-            {
-                buttonConnectClient.Enabled = false;
-                buttonRates.Enabled = false;
-            }
-            else
-            {
-                buttonConnectClient.Enabled = true;
-                buttonRates.Enabled = true;
-            }
-            if (User.user.type != "HeadAdmin" && User.user.type != "Администратор" && User.user.type != "Консультант-продавец товаров")
-            {
-                buttonInventory.Enabled = false;
-                buttonAddOrDelOrder.Enabled = false;
-            }
-            else
-            {
-                buttonInventory.Enabled = true;
-                buttonAddOrDelOrder.Enabled = true;
-            }
-        }
-
         private void buttonConnectClients_Click(object sender, EventArgs e)
         {
             FormConnectedClients formConnected = new FormConnectedClients();
@@ -101,6 +72,72 @@ namespace SETLine
         {
             FormSales formSales = new FormSales();
             formSales.Show();
+        }
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            //if (User.user.type != "Продавец услуг сотовой связи")
+            //{
+            //    buttonConnectClient.Enabled = false;
+            //    buttonRates.Enabled = false;
+            //    menu.Size = new Size(792, 509);
+            //}
+            //else
+            //{
+            //    menu.Size = new Size(442, 355);
+            //    buttonConnectClient.Enabled = true;
+            //    buttonRates.Enabled = true;
+            //}
+            if (User.user.type != "Продавец услуг сотовой связи")
+            {
+                buttonConnectClient.Location = new Point(407, buttonConnectClient.Location.Y);
+                buttonRates.Location = new Point(407, buttonRates.Location.Y);
+                buttonConnectClient.Visible = false;
+                buttonRates.Visible = false;
+            }
+            else
+            {
+                buttonConnectClient.Location = new Point(33, buttonConnectClient.Location.Y);
+                buttonRates.Location = new Point(33, buttonRates.Location.Y);
+                buttonConnectClient.Visible = true;
+                buttonRates.Visible = true;
+                this.Height = 424;
+            }
+            if (User.user.type != "HeadAdmin" && User.user.type != "Администратор" && User.user.type != "Консультант-продавец товаров")
+            {
+                buttonInventory.Visible = false;
+                buttonAddOrDelOrder.Visible = false;
+                buttonInventory.Location = new Point(33, 254);
+                buttonAddOrDelOrder.Location = new Point(33, 191);
+            }
+            else
+            {
+                buttonInventory.Visible = true;
+                buttonAddOrDelOrder.Visible = true;
+                buttonInventory.Location = new Point(33, 191);
+                buttonAddOrDelOrder.Location = new Point(33, 254);
+                this.Height = 416;
+            }
+            if (User.user.type != "HeadAdmin" && User.user.type != "Администратор")
+            {
+                buttonWorkers.Visible = false;
+                buttonConnectedClients.Visible = false;
+                buttonSales.Visible = false;
+                this.Width = 442;
+            }
+            else
+            {
+                buttonInventory.Visible = true;
+                buttonWorkers.Visible = true;
+                buttonConnectedClients.Visible = true;
+                buttonSales.Visible = true;
+                buttonConnectClient.Visible = true;
+                buttonRates.Visible = true;
+                buttonRates.Location = new Point(407, buttonRates.Location.Y);
+                buttonInventory.Location = new Point(33, 254);
+                buttonAddOrDelOrder.Location = new Point(33, 317);
+                this.Height = 516;
+                this.Width = 792;
+            }
         }
     }
 }

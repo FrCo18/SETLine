@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAuthorization));
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.buttonEnter = new System.Windows.Forms.Button();
@@ -39,7 +40,7 @@
             // textBoxPassword
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(113, 139);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(290, 29);
             this.textBoxPassword.TabIndex = 1;
@@ -47,7 +48,7 @@
             // textBoxLogin
             // 
             this.textBoxLogin.Location = new System.Drawing.Point(113, 85);
-            this.textBoxLogin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxLogin.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(290, 29);
             this.textBoxLogin.TabIndex = 0;
@@ -55,8 +56,9 @@
             // buttonEnter
             // 
             this.buttonEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEnter.ForeColor = System.Drawing.Color.Black;
             this.buttonEnter.Location = new System.Drawing.Point(182, 180);
-            this.buttonEnter.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonEnter.Margin = new System.Windows.Forms.Padding(6);
             this.buttonEnter.Name = "buttonEnter";
             this.buttonEnter.Size = new System.Drawing.Size(154, 47);
             this.buttonEnter.TabIndex = 2;
@@ -96,6 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(1)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(527, 250);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.labelPassword);
@@ -104,7 +107,9 @@
             this.Controls.Add(this.textBoxLogin);
             this.Controls.Add(this.textBoxPassword);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormAuthorization";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Авторизация";
