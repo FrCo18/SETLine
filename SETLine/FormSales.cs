@@ -24,7 +24,7 @@ namespace SETLine
             comboBoxWorker.Items.Clear();
             foreach (Workers workers in Program.stlBD.Workers)
             {
-                if (workers.Type == "Консультант-продавец товаров")
+                if (workers.Type == "Консультант-продавец товаров"|| workers.Type == "Администратор" || workers.Type == "HeadAdmin")
                 {
                     string[] item = { workers.Id + ": " + workers.LastName + " " + workers.FirstName[0] + ". " + workers.MiddleName[0] + "." };
                     comboBoxWorker.Items.Add(string.Join(" ", item));
